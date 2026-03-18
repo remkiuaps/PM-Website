@@ -256,10 +256,28 @@ p { color: #6B7280; }
   background: linear-gradient(135deg, #0a0a0a 0%, #1A1A1A 50%, #1B6B2A 100%);
 }
 
+/* Hero video background */
+.hero__video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero__video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero--video {
+  background: #0a0a0a;
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
 
@@ -989,6 +1007,7 @@ p { color: #6B7280; }
 .section-header p { max-width: 600px; margin: 0 auto; font-size: 1.0625rem; }
 
 /* ---- Hero direct content (no wrapper) ---- */
+.hero > .container { position: relative; z-index: 2; }
 .hero h1 { color: #FFFFFF; font-size: 3.5rem; margin-bottom: 1.5rem; line-height: 1.1; }
 .hero h1 span { color: #4ADE80; }
 .hero p { color: rgba(255,255,255,0.85); font-size: 1.25rem; margin-bottom: 2rem; line-height: 1.7; }
