@@ -24,6 +24,15 @@
 </head>
 <body>
 
+<!-- Page Loader -->
+<div class="page-loader">
+  <div class="page-loader__inner">
+    <img src="images/logo.jpg" alt="Loading..." class="page-loader__logo">
+    <div class="page-loader__bar"></div>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -67,15 +76,15 @@
       <div class="page-header__breadcrumb">
         <a href="index.html" data-i18n="nav.home">Strona Główna</a> &gt; <span data-i18n="blogpage.label">Blog</span>
       </div>
-      <h1 data-i18n="blogpage.title">Blog</h1>
-      <p data-i18n="blogpage.subtitle">Aktualności, porady i inspiracje ze świata opakowań</p>
+      <h1 data-animate="fade-up" data-i18n="blogpage.title">Blog</h1>
+      <p data-animate="fade-up" data-delay="100" data-i18n="blogpage.subtitle">Aktualności, porady i inspiracje ze świata opakowań</p>
     </div>
   </section>
 
   <!-- Blog Posts Grid -->
   <section class="blog-listing">
     <div class="container">
-      <div class="blog-listing__grid">
+      <div class="blog-listing__grid" data-stagger>
 
         <!-- Blog Post 1 -->
         <article class="blog-card">
@@ -162,9 +171,9 @@
   <!-- CTA Section -->
   <section class="cta">
     <div class="container">
-      <h2 data-i18n="cta.title">Gotowy na współpracę?</h2>
-      <p data-i18n="cta.subtitle">Skontaktuj się z nami i poznaj naszą ofertę materiałów pakujących</p>
-      <a href="contact.html" class="btn btn-white" data-i18n="cta.button">Skontaktuj się z nami</a>
+      <h2 data-animate="fade-up" data-i18n="cta.title">Gotowy na współpracę?</h2>
+      <p data-animate="fade-up" data-delay="100" data-i18n="cta.subtitle">Skontaktuj się z nami i poznaj naszą ofertę materiałów pakujących</p>
+      <a href="contact.html" class="btn btn-white" data-animate="zoom-in" data-delay="200" data-magnetic data-i18n="cta.button">Skontaktuj się z nami</a>
     </div>
   </section>
 

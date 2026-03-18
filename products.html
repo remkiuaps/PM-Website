@@ -23,6 +23,15 @@
 </head>
 <body>
 
+<!-- Page Loader -->
+<div class="page-loader">
+  <div class="page-loader__inner">
+    <img src="images/logo.jpg" alt="Loading..." class="page-loader__logo">
+    <div class="page-loader__bar"></div>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -59,17 +68,17 @@
         <span data-i18n="nav.products">Produkty</span>
       </div>
       <span class="section-label" data-i18n="products.label">Nasza oferta</span>
-      <h1 data-i18n="products.title">Profesjonalne materiały pakujące</h1>
-      <p data-i18n="products.subtitle">Oferujemy szeroki asortyment materiałów pakujących najwyższej jakości, dostosowanych do potrzeb Twojego biznesu.</p>
+      <h1 data-i18n="products.title" data-animate="fade-up">Profesjonalne materiały pakujące</h1>
+      <p data-i18n="products.subtitle" data-animate="fade-up" data-delay="100">Oferujemy szeroki asortyment materiałów pakujących najwyższej jakości, dostosowanych do potrzeb Twojego biznesu.</p>
     </div>
   </section>
 
   <!-- Products Grid -->
   <section class="section products-grid">
     <div class="container">
-      <div class="grid grid--3">
+      <div class="grid grid--3" data-stagger>
 
-        <div class="product-card">
+        <div class="product-card" data-tilt>
           <div class="product-card__image">
             <img src="https://placehold.co/600x400/f7f8f6/1B6B2A?text=Product+1" alt="Kartony i pudła">
           </div>
@@ -80,7 +89,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-tilt>
           <div class="product-card__image">
             <img src="https://placehold.co/600x400/f7f8f6/1B6B2A?text=Product+2" alt="Folie i taśmy">
           </div>
@@ -91,7 +100,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-tilt>
           <div class="product-card__image">
             <img src="https://placehold.co/600x400/f7f8f6/1B6B2A?text=Product+3" alt="Wypełniacze">
           </div>
@@ -102,7 +111,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-tilt>
           <div class="product-card__image">
             <img src="https://placehold.co/600x400/f7f8f6/1B6B2A?text=Product+4" alt="Materiały ekologiczne">
           </div>
@@ -113,7 +122,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-tilt>
           <div class="product-card__image">
             <img src="https://placehold.co/600x400/f7f8f6/1B6B2A?text=Product+5" alt="Opakowania specjalistyczne">
           </div>
@@ -124,7 +133,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-tilt>
           <div class="product-card__image">
             <img src="https://placehold.co/600x400/f7f8f6/1B6B2A?text=Product+6" alt="Akcesoria pakowe">
           </div>
@@ -143,11 +152,11 @@
   <section class="section pricing">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" data-i18n="pricing.label">Cennik</span>
-        <h2 data-i18n="pricing.title">Wybierz plan dla siebie</h2>
-        <p data-i18n="pricing.subtitle">Elastyczne plany cenowe dopasowane do wielkości Twojego biznesu i potrzeb logistycznych.</p>
+        <span class="section-label" data-i18n="pricing.label" data-animate="fade-up">Cennik</span>
+        <h2 data-i18n="pricing.title" data-animate="fade-up" data-delay="100">Wybierz plan dla siebie</h2>
+        <p data-i18n="pricing.subtitle" data-animate="fade-up" data-delay="200">Elastyczne plany cenowe dopasowane do wielkości Twojego biznesu i potrzeb logistycznych.</p>
       </div>
-      <div class="grid grid--3">
+      <div class="grid grid--3" data-stagger>
 
         <div class="pricing-card">
           <h3 data-i18n="pricing.1.name">Starter</h3>
@@ -196,12 +205,12 @@
   <section class="section faq">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" data-i18n="faq.label">FAQ</span>
-        <h2 data-i18n="faq.title">Często zadawane pytania</h2>
+        <span class="section-label" data-i18n="faq.label" data-animate="fade-up">FAQ</span>
+        <h2 data-i18n="faq.title" data-animate="fade-up" data-delay="100">Często zadawane pytania</h2>
       </div>
       <div class="faq-list">
 
-        <div class="faq-item">
+        <div class="faq-item" data-animate="fade-up" data-delay="100">
           <button class="faq-item__question">
             <span data-i18n="faq.1.q">Jaki jest minimalny rozmiar zamówienia?</span>
             <span class="faq-item__icon">+</span>
@@ -211,7 +220,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item" data-animate="fade-up" data-delay="200">
           <button class="faq-item__question">
             <span data-i18n="faq.2.q">Jak szybko realizujecie dostawy?</span>
             <span class="faq-item__icon">+</span>
@@ -221,7 +230,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item" data-animate="fade-up" data-delay="300">
           <button class="faq-item__question">
             <span data-i18n="faq.3.q">Czy oferujecie opakowania z nadrukiem?</span>
             <span class="faq-item__icon">+</span>
@@ -231,7 +240,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item" data-animate="fade-up" data-delay="400">
           <button class="faq-item__question">
             <span data-i18n="faq.4.q">Czy materiały są przyjazne dla środowiska?</span>
             <span class="faq-item__icon">+</span>
@@ -241,7 +250,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item" data-animate="fade-up" data-delay="500">
           <button class="faq-item__question">
             <span data-i18n="faq.5.q">Jak mogę uzyskać indywidualną wycenę?</span>
             <span class="faq-item__icon">+</span>
@@ -258,9 +267,9 @@
   <!-- CTA Section -->
   <section class="section cta">
     <div class="container">
-      <h2 data-i18n="cta.title">Gotowy na profesjonalne pakowanie?</h2>
-      <p data-i18n="cta.subtitle">Skontaktuj się z nami i otrzymaj bezpłatną wycenę dopasowaną do Twoich potrzeb.</p>
-      <a href="contact.html" class="btn btn-white" data-i18n="cta.button">Zamów bezpłatną wycenę</a>
+      <h2 data-i18n="cta.title" data-animate="fade-up">Gotowy na profesjonalne pakowanie?</h2>
+      <p data-i18n="cta.subtitle" data-animate="fade-up" data-delay="100">Skontaktuj się z nami i otrzymaj bezpłatną wycenę dopasowaną do Twoich potrzeb.</p>
+      <a href="contact.html" class="btn btn-white" data-i18n="cta.button" data-animate="zoom-in" data-delay="200" data-magnetic>Zamów bezpłatną wycenę</a>
     </div>
   </section>
 

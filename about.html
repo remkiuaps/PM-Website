@@ -24,6 +24,15 @@
 </head>
 <body>
 
+<!-- Page Loader -->
+<div class="page-loader">
+  <div class="page-loader__inner">
+    <img src="images/logo.jpg" alt="Loading..." class="page-loader__logo">
+    <div class="page-loader__bar"></div>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -67,8 +76,8 @@
       <div class="page-header__breadcrumb">
         <a href="index.html" data-i18n="nav.home">Strona Główna</a> &gt; <span data-i18n="about.label">O Nas</span>
       </div>
-      <h1 data-i18n="about.title">O Nas</h1>
-      <p data-i18n="about.subtitle">Poznaj historię i wartości Packing Master</p>
+      <h1 data-animate="fade-up" data-i18n="about.title">O Nas</h1>
+      <p data-animate="fade-up" data-delay="100" data-i18n="about.subtitle">Poznaj historię i wartości Packing Master</p>
     </div>
   </section>
 
@@ -77,11 +86,11 @@
     <div class="container">
       <div class="about-story__grid">
         <div class="about-story__text">
-          <h2 data-i18n="about.story.title">Nasza Historia</h2>
-          <p data-i18n="about.story.p1">Packing Master powstał z pasji do doskonałych rozwiązań pakujących. Od ponad dekady dostarczamy profesjonalne materiały pakujące dla firm w całej Polsce. Zaczynaliśmy jako mały zakład produkcyjny, a dziś jesteśmy jednym z wiodących dostawców w branży.</p>
-          <p data-i18n="about.story.p2">Nasze doświadczenie i zaangażowanie pozwoliły nam zbudować trwałe relacje z klientami, którzy cenią jakość, terminowość i indywidualne podejście. Nieustannie inwestujemy w nowoczesne technologie i ekologiczne rozwiązania, aby sprostać rosnącym wymaganiom rynku.</p>
+          <h2 data-animate="fade-right" data-i18n="about.story.title">Nasza Historia</h2>
+          <p data-animate="fade-right" data-delay="100" data-i18n="about.story.p1">Packing Master powstał z pasji do doskonałych rozwiązań pakujących. Od ponad dekady dostarczamy profesjonalne materiały pakujące dla firm w całej Polsce. Zaczynaliśmy jako mały zakład produkcyjny, a dziś jesteśmy jednym z wiodących dostawców w branży.</p>
+          <p data-animate="fade-right" data-delay="200" data-i18n="about.story.p2">Nasze doświadczenie i zaangażowanie pozwoliły nam zbudować trwałe relacje z klientami, którzy cenią jakość, terminowość i indywidualne podejście. Nieustannie inwestujemy w nowoczesne technologie i ekologiczne rozwiązania, aby sprostać rosnącym wymaganiom rynku.</p>
         </div>
-        <div class="about-story__image">
+        <div class="about-story__image img-reveal">
           <img src="https://placehold.co/800x500" alt="Packing Master - nasza historia">
         </div>
       </div>
@@ -91,16 +100,16 @@
   <!-- Mission -->
   <section class="about-mission">
     <div class="container">
-      <h2 data-i18n="about.mission.title">Nasza Misja</h2>
-      <p data-i18n="about.mission.desc">Naszą misją jest dostarczanie najwyższej jakości materiałów pakujących, które chronią produkty naszych klientów i wspierają zrównoważony rozwój. Dążymy do bycia liderem innowacji w branży opakowaniowej, łącząc tradycję z nowoczesnością.</p>
+      <h2 data-animate="fade-up" data-i18n="about.mission.title">Nasza Misja</h2>
+      <p data-animate="fade-up" data-delay="100" data-i18n="about.mission.desc">Naszą misją jest dostarczanie najwyższej jakości materiałów pakujących, które chronią produkty naszych klientów i wspierają zrównoważony rozwój. Dążymy do bycia liderem innowacji w branży opakowaniowej, łącząc tradycję z nowoczesnością.</p>
     </div>
   </section>
 
   <!-- Values -->
   <section class="about-values">
     <div class="container">
-      <h2 data-i18n="about.values.title">Nasze Wartości</h2>
-      <div class="about-values__grid">
+      <h2 data-animate="fade-up" data-i18n="about.values.title">Nasze Wartości</h2>
+      <div class="about-values__grid" data-stagger>
         <div class="about-values__item">
           <div class="about-values__icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -145,9 +154,9 @@
   <!-- Gallery -->
   <section class="about-gallery">
     <div class="container">
-      <h2 data-i18n="about.gallery.title">Nasza Firma</h2>
-      <p data-i18n="about.gallery.subtitle">Zobacz jak wygląda nasza praca od środka</p>
-      <div class="about-gallery__grid">
+      <h2 data-animate="fade-up" data-i18n="about.gallery.title">Nasza Firma</h2>
+      <p data-animate="fade-up" data-delay="100" data-i18n="about.gallery.subtitle">Zobacz jak wygląda nasza praca od środka</p>
+      <div class="about-gallery__grid" data-stagger>
         <img src="https://placehold.co/400x300" alt="Galeria Packing Master 1">
         <img src="https://placehold.co/400x300" alt="Galeria Packing Master 2">
         <img src="https://placehold.co/400x300" alt="Galeria Packing Master 3">
@@ -161,9 +170,9 @@
   <!-- CTA Section -->
   <section class="cta">
     <div class="container">
-      <h2 data-i18n="cta.title">Gotowy na współpracę?</h2>
-      <p data-i18n="cta.subtitle">Skontaktuj się z nami i poznaj naszą ofertę materiałów pakujących</p>
-      <a href="contact.html" class="btn btn-white" data-i18n="cta.button">Skontaktuj się z nami</a>
+      <h2 data-animate="fade-up" data-i18n="cta.title">Gotowy na współpracę?</h2>
+      <p data-animate="fade-up" data-delay="100" data-i18n="cta.subtitle">Skontaktuj się z nami i poznaj naszą ofertę materiałów pakujących</p>
+      <a href="contact.html" class="btn btn-white" data-animate="zoom-in" data-delay="200" data-magnetic data-i18n="cta.button">Skontaktuj się z nami</a>
     </div>
   </section>
 

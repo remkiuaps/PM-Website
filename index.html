@@ -59,6 +59,15 @@
 </head>
 <body>
 
+<!-- Page Loader -->
+<div class="page-loader">
+  <div class="page-loader__inner">
+    <img src="images/logo.jpg" alt="Loading..." class="page-loader__logo">
+    <div class="page-loader__bar"></div>
+  </div>
+</div>
+<div class="scroll-progress"></div>
+
   <!-- ========== HEADER ========== -->
   <header class="header">
     <div class="container">
@@ -101,11 +110,17 @@
     <!-- ========== HERO ========== -->
     <section class="hero">
       <div class="container">
+        <div class="hero__particles">
+          <div class="hero__particle"></div>
+          <div class="hero__particle"></div>
+          <div class="hero__particle"></div>
+          <div class="hero__particle"></div>
+        </div>
         <h1 data-i18n="hero.title">Profesjonalne <span>materiały pakujące</span> dla Twojego biznesu</h1>
         <p data-i18n="hero.subtitle">Produkujemy i dostarczamy najwyższej jakości materiały pakujące. Bezpieczne opakowania, terminowe dostawy, konkurencyjne ceny.</p>
         <div class="hero__buttons">
-          <a href="products.html" class="btn btn-primary" data-i18n="hero.cta1">Sprawdź ofertę</a>
-          <a href="contact.html" class="btn btn-outline" data-i18n="hero.cta2">Skontaktuj się</a>
+          <a href="products.html" class="btn btn-primary" data-i18n="hero.cta1" data-magnetic>Sprawdź ofertę</a>
+          <a href="contact.html" class="btn btn-outline" data-i18n="hero.cta2" data-magnetic>Skontaktuj się</a>
         </div>
       </div>
     </section>
@@ -113,11 +128,11 @@
     <!-- ========== BENEFITS ========== -->
     <section class="benefits">
       <div class="container">
-        <span class="section-label" data-i18n="benefits.label">Dlaczego my</span>
-        <h2 data-i18n="benefits.title">Kompleksowe rozwiązania pakujące</h2>
-        <p class="section-subtitle" data-i18n="benefits.subtitle">Od 10 lat dostarczamy sprawdzone rozwiązania logistyczne i pakujące dla firm z całej Polski.</p>
-        <div class="benefits__grid">
-          <div class="benefit-card">
+        <span class="section-label" data-i18n="benefits.label" data-animate="fade-up">Dlaczego my</span>
+        <h2 data-i18n="benefits.title" data-animate="fade-up" data-delay="100">Kompleksowe rozwiązania pakujące</h2>
+        <p class="section-subtitle" data-i18n="benefits.subtitle" data-animate="fade-up" data-delay="200">Od 10 lat dostarczamy sprawdzone rozwiązania logistyczne i pakujące dla firm z całej Polski.</p>
+        <div class="benefits__grid" data-stagger>
+          <div class="benefit-card" data-tilt>
             <div class="benefit-card__icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -127,7 +142,7 @@
             <h3 data-i18n="benefits.1.title">Najwyższa jakość</h3>
             <p data-i18n="benefits.1.desc">Nasze produkty spełniają najwyższe standardy jakości i posiadają niezbędne certyfikaty.</p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-tilt>
             <div class="benefit-card__icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="1" y="3" width="15" height="13"/>
@@ -139,7 +154,7 @@
             <h3 data-i18n="benefits.2.title">Szybka dostawa</h3>
             <p data-i18n="benefits.2.desc">Realizujemy zamówienia w ciągu 24-48h. Dostarczamy na terenie całego kraju.</p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-tilt>
             <div class="benefit-card__icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="1" x2="12" y2="23"/>
@@ -149,7 +164,7 @@
             <h3 data-i18n="benefits.3.title">Konkurencyjne ceny</h3>
             <p data-i18n="benefits.3.desc">Jako producent oferujemy najlepsze ceny bez pośredników. Rabaty przy większych zamówieniach.</p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-tilt>
             <div class="benefit-card__icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75"/>
@@ -165,10 +180,10 @@
     <!-- ========== PRODUCTS ========== -->
     <section class="products">
       <div class="container">
-        <span class="section-label" data-i18n="products.label">Nasza oferta</span>
-        <h2 data-i18n="products.title">Materiały pakujące</h2>
-        <p class="section-subtitle" data-i18n="products.subtitle">Szeroka gama produktów do pakowania, zabezpieczania i transportu towarów.</p>
-        <div class="products__grid">
+        <span class="section-label" data-i18n="products.label" data-animate="fade-up">Nasza oferta</span>
+        <h2 data-i18n="products.title" data-animate="fade-up" data-delay="100">Materiały pakujące</h2>
+        <p class="section-subtitle" data-i18n="products.subtitle" data-animate="fade-up" data-delay="200">Szeroka gama produktów do pakowania, zabezpieczania i transportu towarów.</p>
+        <div class="products__grid" data-stagger>
           <div class="product-card">
             <img src="https://placehold.co/600x400/1B6B2A/ffffff?text=Kartony" alt="Kartony i pudła" loading="lazy">
             <div class="product-card__content">
@@ -224,10 +239,10 @@
     <!-- ========== TESTIMONIALS ========== -->
     <section class="testimonials">
       <div class="container">
-        <span class="section-label" data-i18n="testimonials.label">Opinie klientów</span>
-        <h2 data-i18n="testimonials.title">Zaufali nam</h2>
-        <p class="section-subtitle" data-i18n="testimonials.subtitle">Sprawdź, co mówią o nas nasi klienci i partnerzy biznesowi.</p>
-        <div class="testimonials__grid">
+        <span class="section-label" data-i18n="testimonials.label" data-animate="fade-up">Opinie klientów</span>
+        <h2 data-i18n="testimonials.title" data-animate="fade-up" data-delay="100">Zaufali nam</h2>
+        <p class="section-subtitle" data-i18n="testimonials.subtitle" data-animate="fade-up" data-delay="200">Sprawdź, co mówią o nas nasi klienci i partnerzy biznesowi.</p>
+        <div class="testimonials__grid" data-stagger>
           <div class="testimonial-card">
             <p class="testimonial-card__text" data-i18n="testimonials.1.text">Współpraca z Packing Master to czysta przyjemność. Materiały zawsze najwyższej jakości, a dostawy terminowe. Polecam każdej firmie e-commerce.</p>
             <div class="testimonial-card__author">
@@ -262,9 +277,9 @@
     <!-- ========== PARTNERS ========== -->
     <section class="partners">
       <div class="container">
-        <span class="section-label" data-i18n="partners.label">Partnerzy</span>
-        <h2 data-i18n="partners.title">Zaufali nam</h2>
-        <div class="partners__grid">
+        <span class="section-label" data-i18n="partners.label" data-animate="fade-up">Partnerzy</span>
+        <h2 data-i18n="partners.title" data-animate="fade-up" data-delay="100">Zaufali nam</h2>
+        <div class="partners__grid" data-stagger>
           <div class="partner-logo">Partner 1</div>
           <div class="partner-logo">Partner 2</div>
           <div class="partner-logo">Partner 3</div>
@@ -277,10 +292,10 @@
     <!-- ========== BLOG ========== -->
     <section class="blog-preview">
       <div class="container">
-        <span class="section-label" data-i18n="blog.label">Blog</span>
-        <h2 data-i18n="blog.title">Aktualności i porady</h2>
-        <p class="section-subtitle" data-i18n="blog.subtitle">Dzielimy się wiedzą o pakowaniu, logistyce i trendach branżowych.</p>
-        <div class="blog-preview__grid">
+        <span class="section-label" data-i18n="blog.label" data-animate="fade-up">Blog</span>
+        <h2 data-i18n="blog.title" data-animate="fade-up" data-delay="100">Aktualności i porady</h2>
+        <p class="section-subtitle" data-i18n="blog.subtitle" data-animate="fade-up" data-delay="200">Dzielimy się wiedzą o pakowaniu, logistyce i trendach branżowych.</p>
+        <div class="blog-preview__grid" data-stagger>
           <article class="blog-card">
             <img src="https://placehold.co/600x400/1A1A1A/ffffff?text=Blog+1" alt="Blog post" loading="lazy">
             <div class="blog-card__content">
@@ -315,9 +330,9 @@
     <!-- ========== CTA ========== -->
     <section class="cta">
       <div class="container">
-        <h2 data-i18n="cta.title">Gotowy na współpracę?</h2>
-        <p data-i18n="cta.subtitle">Skontaktuj się z nami i otrzymaj bezpłatną wycenę dopasowaną do potrzeb Twojej firmy.</p>
-        <a href="contact.html" class="btn btn-primary" data-i18n="cta.button">Skontaktuj się z nami</a>
+        <h2 data-i18n="cta.title" data-animate="fade-up">Gotowy na współpracę?</h2>
+        <p data-i18n="cta.subtitle" data-animate="fade-up" data-delay="100">Skontaktuj się z nami i otrzymaj bezpłatną wycenę dopasowaną do potrzeb Twojej firmy.</p>
+        <a href="contact.html" class="btn btn-primary" data-i18n="cta.button" data-animate="zoom-in" data-delay="200" data-magnetic>Skontaktuj się z nami</a>
       </div>
     </section>
 
