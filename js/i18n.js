@@ -405,7 +405,7 @@ function updateLangButtons() {
     btn.classList.toggle('active', btn.dataset.lang === currentLang);
   });
   // Animate flag to active button position, then swap SVG
-  const plFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="12" fill="#fff"/><rect y="12" width="32" height="12" fill="#DC143C"/></svg>';
+  const plFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="12" fill="#E8E8E8"/><rect y="12" width="32" height="12" fill="#DC143C"/></svg>';
   const enFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="24" fill="#012169"/><path d="M0 0L32 24M32 0L0 24" stroke="#fff" stroke-width="4"/><path d="M0 0L32 24M32 0L0 24" stroke="#C8102E" stroke-width="2.5"/><path d="M16 0V24M0 12H32" stroke="#fff" stroke-width="8"/><path d="M16 0V24M0 12H32" stroke="#C8102E" stroke-width="5"/></svg>';
   document.querySelectorAll('.lang-switcher').forEach(switcher => {
     const flag = switcher.querySelector('.lang-switcher__flag');
@@ -425,7 +425,7 @@ function updateLangButtons() {
 
 // Position flags immediately on load (no animation)
 function initFlagPositions() {
-  const plFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="12" fill="#fff"/><rect y="12" width="32" height="12" fill="#DC143C"/></svg>';
+  const plFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="12" fill="#E8E8E8"/><rect y="12" width="32" height="12" fill="#DC143C"/></svg>';
   const enFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="24" fill="#012169"/><path d="M0 0L32 24M32 0L0 24" stroke="#fff" stroke-width="4"/><path d="M0 0L32 24M32 0L0 24" stroke="#C8102E" stroke-width="2.5"/><path d="M16 0V24M0 12H32" stroke="#fff" stroke-width="8"/><path d="M16 0V24M0 12H32" stroke="#C8102E" stroke-width="5"/></svg>';
   document.querySelectorAll('.lang-switcher').forEach(switcher => {
     const flag = switcher.querySelector('.lang-switcher__flag');
