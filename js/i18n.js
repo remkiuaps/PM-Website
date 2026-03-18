@@ -5,6 +5,10 @@
 
 const translations = {
   pl: {
+    // Topbar
+    "topbar.text": "Chcesz ograniczyć koszt zabezpieczania przesyłek?",
+    "topbar.cta": "Skontaktuj się z nami",
+
     // Nav
     "nav.home": "Strona Główna",
     "nav.about": "O Nas",
@@ -185,6 +189,10 @@ const translations = {
     "blogpage.subtitle": "Dzielimy się wiedzą na temat pakowania, logistyki i nowych trendów w branży."
   },
   en: {
+    // Topbar
+    "topbar.text": "Want to reduce packaging costs?",
+    "topbar.cta": "Contact us",
+
     // Nav
     "nav.home": "Home",
     "nav.about": "About Us",
