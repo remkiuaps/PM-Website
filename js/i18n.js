@@ -401,58 +401,19 @@ function translatePage() {
 }
 
 function updateLangButtons() {
-  document.querySelectorAll('.lang-switcher button').forEach(btn => {
+  document.querySelectorAll('.lang-switcher__track').forEach(track => {
+    track.setAttribute('data-active', currentLang);
+  });
+  document.querySelectorAll('.lang-switcher__option').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === currentLang);
-  });
-  // Animate flag to active button position, then swap SVG
-  const plFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="12" fill="#E8E8E8"/><rect y="12" width="32" height="12" fill="#DC143C"/></svg>';
-  const enFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="24" fill="#012169"/><path d="M0 0L32 24M32 0L0 24" stroke="#fff" stroke-width="4"/><path d="M0 0L32 24M32 0L0 24" stroke="#C8102E" stroke-width="2.5"/><path d="M16 0V24M0 12H32" stroke="#fff" stroke-width="8"/><path d="M16 0V24M0 12H32" stroke="#C8102E" stroke-width="5"/></svg>';
-  document.querySelectorAll('.lang-switcher').forEach(switcher => {
-    const flag = switcher.querySelector('.lang-switcher__flag');
-    const activeBtn = switcher.querySelector('button.active');
-    if (!flag || !activeBtn) return;
-    // Calculate target position: align flag center with button center
-    const switcherRect = switcher.getBoundingClientRect();
-    const btnRect = activeBtn.getBoundingClientRect();
-    const targetLeft = (btnRect.left - switcherRect.left) + (btnRect.width / 2) - (flag.offsetWidth / 2);
-    flag.style.left = targetLeft + 'px';
-    // Swap flag SVG after slide animation completes
-    setTimeout(() => {
-      flag.innerHTML = currentLang === 'pl' ? plFlag : enFlag;
-    }, 400);
-  });
-}
-
-// Position flags immediately on load (no animation)
-function initFlagPositions() {
-  const plFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="12" fill="#E8E8E8"/><rect y="12" width="32" height="12" fill="#DC143C"/></svg>';
-  const enFlag = '<svg viewBox="0 0 32 24"><rect width="32" height="24" fill="#012169"/><path d="M0 0L32 24M32 0L0 24" stroke="#fff" stroke-width="4"/><path d="M0 0L32 24M32 0L0 24" stroke="#C8102E" stroke-width="2.5"/><path d="M16 0V24M0 12H32" stroke="#fff" stroke-width="8"/><path d="M16 0V24M0 12H32" stroke="#C8102E" stroke-width="5"/></svg>';
-  document.querySelectorAll('.lang-switcher').forEach(switcher => {
-    const flag = switcher.querySelector('.lang-switcher__flag');
-    const activeBtn = switcher.querySelector('button.active');
-    if (!flag || !activeBtn) return;
-    flag.innerHTML = currentLang === 'pl' ? plFlag : enFlag;
-    // Disable transition for initial position
-    flag.style.transition = 'none';
-    const switcherRect = switcher.getBoundingClientRect();
-    const btnRect = activeBtn.getBoundingClientRect();
-    const targetLeft = (btnRect.left - switcherRect.left) + (btnRect.width / 2) - (flag.offsetWidth / 2);
-    flag.style.left = targetLeft + 'px';
-    // Re-enable transition after paint
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        flag.style.transition = '';
-      });
-    });
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   translatePage();
   updateLangButtons();
-  initFlagPositions();
 
-  document.querySelectorAll('.lang-switcher button').forEach(btn => {
+  document.querySelectorAll('.lang-switcher__option').forEach(btn => {
     btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
   });
 });
