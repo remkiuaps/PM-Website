@@ -23,6 +23,10 @@ const translations = {
     "hero.cta2": "Skontaktuj się",
 
     // Benefits
+    "benefits.stat.1": "lat doświadczenia",
+    "benefits.stat.2": "zadowolonych klientów",
+    "benefits.stat.3": "czas realizacji",
+    "benefits.stat.4": "satysfakcji klientów",
     "benefits.label": "Dlaczego my",
     "benefits.title": "Kompleksowe rozwiązania pakujące",
     "benefits.subtitle": "Od 10 lat dostarczamy sprawdzone rozwiązania logistyczne i pakujące dla firm z całej Polski.",
@@ -207,6 +211,10 @@ const translations = {
     "hero.cta2": "Contact us",
 
     // Benefits
+    "benefits.stat.1": "years of experience",
+    "benefits.stat.2": "satisfied clients",
+    "benefits.stat.3": "fulfillment time",
+    "benefits.stat.4": "client satisfaction",
     "benefits.label": "Why us",
     "benefits.title": "Comprehensive packaging solutions",
     "benefits.subtitle": "For over 10 years, we have been providing proven logistics and packaging solutions for companies across Poland.",
