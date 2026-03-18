@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const scrollY = window.scrollY;
       if (scrollY > 10) {
         header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-        header.style.height = '70px';
+        header.style.height = '100px';
       } else {
         header.style.boxShadow = 'none';
-        header.style.height = '80px';
+        header.style.height = '120px';
       }
       lastScroll = scrollY;
     }, { passive: true });
