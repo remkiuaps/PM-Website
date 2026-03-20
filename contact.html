@@ -111,7 +111,10 @@
 
         <!-- Contact Form -->
         <div class="contact__form-wrapper" data-animate="fade-right">
-          <form id="contactForm" class="contact__form">
+          <form id="contactForm" class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6b83f840-7143-4399-a2dd-20a84a8de076">
+            <input type="hidden" name="from_name" value="Packing Master - Formularz kontaktowy">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
             <div class="form-row">
               <div class="form-group">
                 <label data-i18n="contact.form.name">Imię i nazwisko</label>
@@ -204,7 +207,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="images/logo.jpg" alt="Packing Master">
+          <img src="images/Czarno-bale-logo.png" alt="Packing Master">
           <p data-i18n="footer.desc">Packing Master - producent i dostawca profesjonalnych materiałów pakujących. Działamy na rynku od ponad 10 lat.</p>
         </div>
         <div>

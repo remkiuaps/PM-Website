@@ -279,15 +279,39 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
-      btn.textContent = currentLang === 'pl' ? 'Wysłano!' : 'Sent!';
+      btn.textContent = currentLang === 'pl' ? 'Wysyłanie...' : 'Sending...';
       btn.disabled = true;
-      btn.style.backgroundColor = '#145220';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        btn.style.backgroundColor = '';
-        contactForm.reset();
-      }, 3000);
+
+      const formData = new FormData(contactForm);
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          btn.textContent = currentLang === 'pl' ? 'Wysłano!' : 'Sent!';
+          btn.style.backgroundColor = '#145220';
+          contactForm.reset();
+        } else {
+          btn.textContent = currentLang === 'pl' ? 'Błąd wysyłki' : 'Error';
+          btn.style.backgroundColor = '#dc2626';
+        }
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.style.backgroundColor = '';
+        }, 3000);
+      })
+      .catch(() => {
+        btn.textContent = currentLang === 'pl' ? 'Błąd połączenia' : 'Connection error';
+        btn.style.backgroundColor = '#dc2626';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.style.backgroundColor = '';
+        }, 3000);
+      });
     });
   }
 
