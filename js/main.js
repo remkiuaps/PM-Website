@@ -182,38 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ---- Magnetic Button Effect ----
-  const magneticBtns = document.querySelectorAll('[data-magnetic]');
-  magneticBtns.forEach(btn => {
-    btn.addEventListener('mousemove', (e) => {
-      const rect = btn.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-    });
-
-    btn.addEventListener('mouseleave', () => {
-      btn.style.transform = '';
-      btn.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-      setTimeout(() => { btn.style.transition = ''; }, 400);
-    });
-  });
-
-  // ---- Button Ripple Effect ----
-  document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      const ripple = document.createElement('span');
-      ripple.classList.add('ripple');
-      const rect = this.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height);
-      ripple.style.width = ripple.style.height = size + 'px';
-      ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
-      ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
-      this.appendChild(ripple);
-      ripple.addEventListener('animationend', () => ripple.remove());
-    });
-  });
-
   // ---- Counter Animation ----
   const counters = document.querySelectorAll('[data-counter]');
   if (counters.length > 0 && 'IntersectionObserver' in window) {
@@ -256,6 +224,43 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // ---- Testimonials Carousel ----
+  const carousel = document.querySelector('.testimonials-carousel');
+  if (carousel) {
+    const cards = carousel.querySelectorAll('.testimonial-card');
+    const dots = carousel.querySelectorAll('.testimonials-carousel__dots button');
+    const prevBtn = carousel.querySelector('.testimonials-carousel__prev');
+    const nextBtn = carousel.querySelector('.testimonials-carousel__next');
+    let current = 0;
+    let autoTimer;
+
+    function showSlide(index) {
+      cards.forEach(c => c.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      current = (index + cards.length) % cards.length;
+      cards[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function startAuto() {
+      autoTimer = setInterval(() => showSlide(current + 1), 5000);
+    }
+
+    function resetAuto() {
+      clearInterval(autoTimer);
+      startAuto();
+    }
+
+    prevBtn.addEventListener('click', () => { showSlide(current - 1); resetAuto(); });
+    nextBtn.addEventListener('click', () => { showSlide(current + 1); resetAuto(); });
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => { showSlide(i); resetAuto(); });
+    });
+
+    showSlide(0);
+    startAuto();
+  }
 
   // ---- FAQ Accordion ----
   document.querySelectorAll('.faq-item__question').forEach(btn => {

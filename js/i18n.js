@@ -15,6 +15,7 @@ const translations = {
     "nav.products": "Produkty",
     "nav.blog": "Blog",
     "nav.contact": "Kontakt",
+    "nav.shop": "Sklep",
 
     // Hero
     "hero.title": "Profesjonalne <span>materiały pakujące</span> dla Twojego biznesu",
@@ -23,10 +24,6 @@ const translations = {
     "hero.cta2": "Skontaktuj się",
 
     // Benefits
-    "benefits.stat.1": "lat doświadczenia",
-    "benefits.stat.2": "zadowolonych klientów",
-    "benefits.stat.3": "czas realizacji",
-    "benefits.stat.4": "satysfakcji klientów",
     "benefits.label": "Dlaczego my",
     "benefits.title": "Kompleksowe rozwiązania pakujące",
     "benefits.subtitle": "Od 10 lat dostarczamy sprawdzone rozwiązania logistyczne i pakujące dla firm z całej Polski.",
@@ -38,6 +35,16 @@ const translations = {
     "benefits.3.desc": "Jako producent oferujemy najlepsze ceny bez pośredników. Rabaty przy większych zamówieniach.",
     "benefits.4.title": "Ekologiczne materiały",
     "benefits.4.desc": "Oferujemy szeroką gamę materiałów ekologicznych, nadających się do recyklingu.",
+    "benefits.testimonials.title": "Co mówią nasi klienci",
+    "benefits.testimonial.1.quote": "Współpraca z Packing Master to czysta przyjemność. Materiały zawsze najwyższej jakości, a dostawy terminowe.",
+    "benefits.testimonial.1.name": "Anna Kowalska",
+    "benefits.testimonial.1.company": "Sklep Online AK",
+    "benefits.testimonial.2.quote": "Od kiedy korzystamy z materiałów Packing Master, liczba uszkodzeń w transporcie spadła o 80%.",
+    "benefits.testimonial.2.name": "Marcin Nowak",
+    "benefits.testimonial.2.company": "TechParts Sp. z o.o.",
+    "benefits.testimonial.3.quote": "Profesjonalne podejście, szybki czas realizacji i świetna obsługa klienta. Polecam!",
+    "benefits.testimonial.3.name": "Katarzyna Wiśniewska",
+    "benefits.testimonial.3.company": "FreshBox",
 
     // Products
     "products.label": "Nasza oferta",
@@ -203,6 +210,7 @@ const translations = {
     "nav.products": "Products",
     "nav.blog": "Blog",
     "nav.contact": "Contact",
+    "nav.shop": "Shop",
 
     // Hero
     "hero.title": "Professional <span>packaging materials</span> for your business",
@@ -211,10 +219,6 @@ const translations = {
     "hero.cta2": "Contact us",
 
     // Benefits
-    "benefits.stat.1": "years of experience",
-    "benefits.stat.2": "satisfied clients",
-    "benefits.stat.3": "fulfillment time",
-    "benefits.stat.4": "client satisfaction",
     "benefits.label": "Why us",
     "benefits.title": "Comprehensive packaging solutions",
     "benefits.subtitle": "For over 10 years, we have been providing proven logistics and packaging solutions for companies across Poland.",
@@ -226,6 +230,16 @@ const translations = {
     "benefits.3.desc": "As a manufacturer, we offer the best prices without intermediaries. Discounts on larger orders.",
     "benefits.4.title": "Eco-friendly materials",
     "benefits.4.desc": "We offer a wide range of eco-friendly, recyclable packaging materials.",
+    "benefits.testimonials.title": "What our clients say",
+    "benefits.testimonial.1.quote": "Working with Packing Master is a pleasure. Materials are always top quality and deliveries are on time.",
+    "benefits.testimonial.1.name": "Anna Kowalska",
+    "benefits.testimonial.1.company": "AK Online Store",
+    "benefits.testimonial.2.quote": "Since we started using Packing Master materials, transit damage has dropped by 80%.",
+    "benefits.testimonial.2.name": "Marcin Nowak",
+    "benefits.testimonial.2.company": "TechParts Ltd.",
+    "benefits.testimonial.3.quote": "Professional approach, quick turnaround, and great customer service. Highly recommended!",
+    "benefits.testimonial.3.name": "Katarzyna Wiśniewska",
+    "benefits.testimonial.3.company": "FreshBox",
 
     // Products
     "products.label": "Our offer",
