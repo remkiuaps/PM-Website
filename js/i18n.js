@@ -204,7 +204,7 @@ const translations = {
     "privacy.title": "Polityka Prywatności",
     "privacy.subtitle": "Informacje o przetwarzaniu danych osobowych zgodnie z RODO",
     "privacy.s1.title": "1. Administrator danych osobowych",
-    "privacy.s1.p1": "Administratorem Twoich danych osobowych jest PACKING MASTER Spółka z ograniczoną odpowiedzialnością z siedzibą pod adresem Korczunkowa 20, 05-503 Głosków, NIP: 1231578739, REGON: 541471730 (dalej: „Administrator").",
+    "privacy.s1.p1": "Administratorem Twoich danych osobowych jest PACKING MASTER Spółka z ograniczoną odpowiedzialnością z siedzibą pod adresem Korczunkowa 20, 05-503 Głosków, NIP: 1231578739, REGON: 541471730 (dalej: \u201EAdministrator\u201D).",
     "privacy.s1.p2": "W sprawach związanych z ochroną danych osobowych możesz skontaktować się z nami pod adresem e-mail: info@packingmaster.com lub telefonicznie: +48 532 104 492.",
     "privacy.s2.title": "2. Jakie dane zbieramy",
     "privacy.s2.p1": "W ramach korzystania z naszej strony internetowej możemy zbierać następujące dane osobowe:",
