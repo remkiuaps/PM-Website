@@ -6,8 +6,8 @@
 const translations = {
   pl: {
     // Topbar
-    "topbar.text": "Chcesz ograniczyć koszt zabezpieczania przesyłek?",
-    "topbar.cta": "Skontaktuj się z nami",
+    "topbar.text": "Szukasz producenta papierowych materiałów pakujących?",
+    "topbar.cta": "Zapytaj o wycenę hurtową",
 
     // Nav
     "nav.home": "Strona Główna",
@@ -18,10 +18,10 @@ const translations = {
     "nav.shop": "Sklep",
 
     // Hero
-    "hero.title": "Profesjonalne <span>materiały pakujące</span> dla Twojego biznesu",
-    "hero.subtitle": "Produkujemy i dostarczamy najwyższej jakości materiały pakujące. Bezpieczne opakowania, terminowe dostawy, konkurencyjne ceny.",
-    "hero.cta1": "Sprawdź ofertę",
-    "hero.cta2": "Skontaktuj się",
+    "hero.title": "Producent <span>papierowych materiałów pakujących</span> dla biznesu",
+    "hero.subtitle": "Produkujemy papier pakowy, papier honeycomb i papier bąbelkowy. Współpracujemy z firmami B2B — zapytaj o indywidualną wycenę na większe ilości.",
+    "hero.cta1": "Zobacz nasze produkty",
+    "hero.cta2": "Zapytaj o wycenę",
 
     // Benefits
     "benefits.label": "Dlaczego my",
@@ -47,22 +47,18 @@ const translations = {
     "benefits.testimonial.3.company": "FreshBox",
 
     // Products
-    "products.label": "Nasza oferta",
-    "products.title": "Materiały pakujące",
-    "products.subtitle": "Szeroka gama produktów do pakowania, zabezpieczania i transportu towarów.",
-    "products.1.title": "Kartony i pudła",
-    "products.1.desc": "Kartony klapowe, fasonowe i specjalistyczne w każdym rozmiarze. Produkcja na zamówienie.",
-    "products.2.title": "Folie i taśmy",
-    "products.2.desc": "Folie stretch, bąbelkowe, taśmy pakowe i zabezpieczające. Materiały o wysokiej wytrzymałości.",
-    "products.3.title": "Wypełniacze",
-    "products.3.desc": "Papier pakowy, wypełniacze styropianowe, poduszki powietrzne. Ochrona produktów w transporcie.",
-    "products.4.title": "Materiały ekologiczne",
-    "products.4.desc": "Papier kraft, tektura falista, materiały biodegradowalne. Pakowanie przyjazne środowisku.",
-    "products.5.title": "Palety i zabezpieczenia",
-    "products.5.desc": "Palety drewniane, narożniki, folie kapturowe. Kompleksowe zabezpieczenie ładunku.",
-    "products.6.title": "Rozwiązania na zamówienie",
-    "products.6.desc": "Projektujemy i produkujemy opakowania dopasowane do indywidualnych potrzeb klienta.",
-    "products.more": "Sprawdź szczegóły",
+    "products.label": "Nasza produkcja",
+    "products.title": "Papierowe materiały pakujące",
+    "products.subtitle": "Produkujemy ekologiczne materiały pakujące z papieru. Idealne rozwiązania dla firm szukających dużych ilości.",
+    "products.1.title": "Papier pakowy w rolkach i arkuszach",
+    "products.1.desc": "Wysokiej jakości papier pakowy dostępny w rolkach i arkuszach. Idealny do zabezpieczania produktów, przekładania warstw i pakowania hurtowego.",
+    "products.2.title": "Papier pakowy w rolkach",
+    "products.2.desc": "Papier pakowy w rolkach o różnych gramaturach i szerokościach. Ekonomiczne rozwiązanie do ciągłego pakowania w linii produkcyjnej.",
+    "products.3.title": "Papier nacinany honeycomb",
+    "products.3.desc": "Innowacyjny papier z nacięciami tworzącymi strukturę plastra miodu. Elastyczny, ekologiczny i doskonale amortyzujący wstrząsy.",
+    "products.4.title": "Papier bąbelkowy",
+    "products.4.desc": "Papierowa alternatywa dla folii bąbelkowej. W 100% z papieru, w pełni recyklingowalny, zapewnia skuteczną ochronę przed uszkodzeniami.",
+    "products.more": "Zapytaj o wycenę",
 
     // Testimonials
     "testimonials.label": "Opinie klientów",
@@ -98,23 +94,23 @@ const translations = {
     "blog.3.desc": "Praktyczne porady, jak zoptymalizować koszty pakowania w firmie bez utraty jakości.",
 
     // CTA
-    "cta.title": "Gotowy na współpracę?",
-    "cta.subtitle": "Skontaktuj się z nami i otrzymaj bezpłatną wycenę dopasowaną do potrzeb Twojej firmy.",
-    "cta.button": "Skontaktuj się z nami",
+    "cta.title": "Szukasz producenta na stałą współpracę?",
+    "cta.subtitle": "Skontaktuj się z nami i otrzymaj indywidualną wycenę dostosowaną do wielkości Twojego zamówienia.",
+    "cta.button": "Zapytaj o wycenę",
 
     // FAQ
     "faq.label": "FAQ",
     "faq.title": "Często zadawane pytania",
     "faq.1.q": "Jaki jest minimalny rozmiar zamówienia?",
-    "faq.1.a": "Minimalne zamówienie to 100 sztuk kartonów lub 1 paleta materiałów pakujących. Dla stałych klientów oferujemy elastyczne warunki.",
+    "faq.1.a": "Minimalne zamówienie to 1 paleta materiałów pakujących. Dla stałych klientów oferujemy elastyczne warunki.",
     "faq.2.q": "Jak szybko realizujecie zamówienia?",
     "faq.2.a": "Standardowe zamówienia realizujemy w ciągu 24-48 godzin roboczych. Zamówienia niestandardowe i produkcja na zamówienie - od 5 do 10 dni roboczych.",
     "faq.3.q": "Czy oferujecie darmową dostawę?",
     "faq.3.a": "Tak, oferujemy darmową dostawę dla zamówień powyżej 2000 zł netto na terenie całej Polski.",
-    "faq.4.q": "Czy możecie wyprodukować opakowania z naszym logo?",
-    "faq.4.a": "Oczywiście! Oferujemy pełen zakres personalizacji opakowań - nadruki, logotypy, niestandardowe wymiary. Skontaktuj się z nami po indywidualną wycenę.",
+    "faq.4.q": "Czy produkujecie papier z nadrukiem?",
+    "faq.4.a": "Tak, oferujemy personalizację papieru pakowego - nadruki logo, kolorów firmowych i indywidualnych wzorów. Skontaktuj się z nami po wycenę.",
     "faq.5.q": "Jakie certyfikaty posiadają Wasze produkty?",
-    "faq.5.a": "Nasze produkty posiadają certyfikaty FSC, PEFC oraz spełniają normy ISO 9001. Materiały ekologiczne posiadają certyfikaty biodegradowalności.",
+    "faq.5.a": "Nasze produkty posiadają certyfikaty FSC, PEFC oraz spełniają normy ISO 9001. Wszystkie materiały są w pełni recyklingowalne.",
 
     // Contact
     "contact.label": "Kontakt",
@@ -186,23 +182,81 @@ const translations = {
     "pricing.3.f4": "Nadruki i branding",
     "pricing.cta": "Zapytaj o wycenę",
 
+    // Contact form consent
+    "contact.form.consent": "Zapoznałem/am się z <a href=\"privacy.html\">Polityką Prywatności</a> i wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi przesłanego zapytania.",
+
     // Footer
-    "footer.desc": "Packing Master - producent i dostawca profesjonalnych materiałów pakujących. Działamy na rynku od ponad 10 lat, oferując kompleksowe rozwiązania logistyczne.",
+    "footer.desc": "Packing Master - producent papierowych materiałów pakujących. Papier pakowy, honeycomb i bąbelkowy. Współpraca B2B na dużą skalę.",
     "footer.menu": "Menu",
     "footer.products": "Produkty",
     "footer.contact": "Kontakt",
     "footer.social": "Social Media",
     "footer.copyright": "© 2026 Packing Master. Wszelkie prawa zastrzeżone.",
+    "footer.privacy": "Polityka Prywatności",
 
     // Blog page
     "blogpage.label": "Blog",
     "blogpage.title": "Aktualności i porady",
-    "blogpage.subtitle": "Dzielimy się wiedzą na temat pakowania, logistyki i nowych trendów w branży."
+    "blogpage.subtitle": "Dzielimy się wiedzą na temat pakowania, logistyki i nowych trendów w branży.",
+
+    // Privacy Policy page
+    "privacy.label": "Informacje prawne",
+    "privacy.title": "Polityka Prywatności",
+    "privacy.subtitle": "Informacje o przetwarzaniu danych osobowych zgodnie z RODO",
+    "privacy.s1.title": "1. Administrator danych osobowych",
+    "privacy.s1.p1": "Administratorem Twoich danych osobowych jest PACKING MASTER Spółka z ograniczoną odpowiedzialnością z siedzibą pod adresem Korczunkowa 20, 05-503 Głosków, NIP: 1231578739, REGON: 541471730 (dalej: „Administrator").",
+    "privacy.s1.p2": "W sprawach związanych z ochroną danych osobowych możesz skontaktować się z nami pod adresem e-mail: info@packingmaster.com lub telefonicznie: +48 532 104 492.",
+    "privacy.s2.title": "2. Jakie dane zbieramy",
+    "privacy.s2.p1": "W ramach korzystania z naszej strony internetowej możemy zbierać następujące dane osobowe:",
+    "privacy.s2.li1": "Imię i nazwisko — podawane w formularzu kontaktowym",
+    "privacy.s2.li2": "Adres e-mail — podawany w formularzu kontaktowym",
+    "privacy.s2.li3": "Numer telefonu — podawany opcjonalnie w formularzu kontaktowym",
+    "privacy.s2.li4": "Nazwa firmy — podawana opcjonalnie w formularzu kontaktowym",
+    "privacy.s2.li5": "Treść wiadomości — wpisywana w formularzu kontaktowym",
+    "privacy.s2.li6": "Dane o aktywności na stronie — zbierane automatycznie przez Google Analytics (adres IP, typ przeglądarki, czas wizyty, odwiedzane podstrony)",
+    "privacy.s3.title": "3. Cele i podstawy prawne przetwarzania",
+    "privacy.s3.p1": "Twoje dane osobowe przetwarzamy w następujących celach:",
+    "privacy.s3.li1": "Odpowiedź na zapytanie przesłane przez formularz kontaktowy — na podstawie art. 6 ust. 1 lit. f) RODO (prawnie uzasadniony interes Administratora polegający na obsłudze zapytań)",
+    "privacy.s3.li2": "Nawiązanie i realizacja współpracy handlowej — na podstawie art. 6 ust. 1 lit. b) RODO (wykonanie umowy lub podjęcie działań przed jej zawarciem)",
+    "privacy.s3.li3": "Analiza ruchu na stronie internetowej i jej optymalizacja — na podstawie art. 6 ust. 1 lit. a) RODO (zgoda wyrażona poprzez akceptację cookies) oraz art. 6 ust. 1 lit. f) RODO (prawnie uzasadniony interes Administratora)",
+    "privacy.s3.li4": "Ustalenie, dochodzenie lub obrona przed roszczeniami — na podstawie art. 6 ust. 1 lit. f) RODO (prawnie uzasadniony interes Administratora)",
+    "privacy.s4.title": "4. Odbiorcy danych",
+    "privacy.s4.p1": "Twoje dane osobowe mogą być przekazywane następującym kategoriom odbiorców:",
+    "privacy.s4.li1": "Web3Forms (web3forms.com) — usługa obsługująca formularz kontaktowy, przetwarzająca dane przesłane za jego pośrednictwem",
+    "privacy.s4.li2": "Google LLC — w ramach usługi Google Analytics, do analizy ruchu na stronie internetowej",
+    "privacy.s4.li3": "Dostawcy usług hostingowych i IT — zapewniający infrastrukturę techniczną do działania strony",
+    "privacy.s4.p2": "Niektórzy z wyżej wymienionych odbiorców mogą mieć siedziby poza Europejskim Obszarem Gospodarczym (EOG). W takich przypadkach transfer danych odbywa się na podstawie standardowych klauzul umownych zatwierdzonych przez Komisję Europejską lub na podstawie decyzji stwierdzającej odpowiedni stopień ochrony.",
+    "privacy.s5.title": "5. Okres przechowywania danych",
+    "privacy.s5.p1": "Twoje dane osobowe przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane:",
+    "privacy.s5.li1": "Dane z formularza kontaktowego — przez okres prowadzenia korespondencji i obsługi zapytania, a następnie przez okres przedawnienia ewentualnych roszczeń (maksymalnie 3 lata)",
+    "privacy.s5.li2": "Dane analityczne (Google Analytics) — zgodnie z ustawieniami retencji danych w Google Analytics (domyślnie 14 miesięcy)",
+    "privacy.s6.title": "6. Twoje prawa",
+    "privacy.s6.p1": "W związku z przetwarzaniem Twoich danych osobowych przysługują Ci następujące prawa:",
+    "privacy.s6.li1": "Prawo dostępu do danych — możesz uzyskać informację o tym, jakie Twoje dane przetwarzamy",
+    "privacy.s6.li2": "Prawo do sprostowania — możesz żądać poprawienia nieprawidłowych lub uzupełnienia niekompletnych danych",
+    "privacy.s6.li3": "Prawo do usunięcia (prawo do bycia zapomnianym) — możesz żądać usunięcia swoich danych",
+    "privacy.s6.li4": "Prawo do ograniczenia przetwarzania — możesz żądać ograniczenia przetwarzania Twoich danych",
+    "privacy.s6.li5": "Prawo do przenoszenia danych — możesz otrzymać swoje dane w ustrukturyzowanym formacie",
+    "privacy.s6.li6": "Prawo do sprzeciwu — możesz wnieść sprzeciw wobec przetwarzania danych opartego na prawnie uzasadnionym interesie Administratora",
+    "privacy.s6.li7": "Prawo do cofnięcia zgody — jeśli przetwarzanie odbywa się na podstawie zgody, możesz ją cofnąć w dowolnym momencie",
+    "privacy.s6.p2": "Aby skorzystać z powyższych praw, skontaktuj się z nami pod adresem: info@packingmaster.com.",
+    "privacy.s7.title": "7. Prawo do skargi",
+    "privacy.s7.p1": "Jeśli uważasz, że przetwarzanie Twoich danych osobowych narusza przepisy RODO, masz prawo wniesienia skargi do organu nadzorczego — Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa, www.uodo.gov.pl).",
+    "privacy.s8.title": "8. Pliki cookies",
+    "privacy.s8.p1": "Nasza strona internetowa wykorzystuje pliki cookies (ciasteczka). Są to małe pliki tekstowe zapisywane na Twoim urządzeniu przez przeglądarkę internetową. Stosujemy następujące rodzaje cookies:",
+    "privacy.s8.li1": "Cookies niezbędne — zapewniające prawidłowe funkcjonowanie strony (np. zapamiętanie wybranego języka)",
+    "privacy.s8.li2": "Cookies analityczne (Google Analytics) — pozwalające na analizę sposobu korzystania ze strony, zbierające zanonimizowane dane statystyczne",
+    "privacy.s8.p2": "Możesz zarządzać ustawieniami cookies w swojej przeglądarce internetowej. Wyłączenie cookies może wpłynąć na funkcjonalność strony.",
+    "privacy.s9.title": "9. Dobrowolność podania danych",
+    "privacy.s9.p1": "Podanie danych osobowych w formularzu kontaktowym jest dobrowolne, jednak niezbędne do przesłania zapytania i otrzymania odpowiedzi od nas. Niepodanie danych oznaczonych jako wymagane uniemożliwi wysłanie formularza.",
+    "privacy.s10.title": "10. Zmiany polityki prywatności",
+    "privacy.s10.p1": "Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Aktualna wersja polityki jest zawsze dostępna na tej stronie.",
+    "privacy.s10.p2": "Data ostatniej aktualizacji: 26 marca 2026 r."
   },
   en: {
     // Topbar
-    "topbar.text": "Want to reduce packaging costs?",
-    "topbar.cta": "Contact us",
+    "topbar.text": "Looking for a paper packaging manufacturer?",
+    "topbar.cta": "Request a wholesale quote",
 
     // Nav
     "nav.home": "Home",
@@ -213,10 +267,10 @@ const translations = {
     "nav.shop": "Shop",
 
     // Hero
-    "hero.title": "Professional <span>packaging materials</span> for your business",
-    "hero.subtitle": "We produce and deliver the highest quality packaging materials. Secure packaging, timely deliveries, competitive prices.",
-    "hero.cta1": "View offer",
-    "hero.cta2": "Contact us",
+    "hero.title": "Manufacturer of <span>paper packaging materials</span> for business",
+    "hero.subtitle": "We produce wrapping paper, honeycomb paper and bubble paper. We work with B2B companies — request a custom quote for larger quantities.",
+    "hero.cta1": "See our products",
+    "hero.cta2": "Request a quote",
 
     // Benefits
     "benefits.label": "Why us",
@@ -242,22 +296,18 @@ const translations = {
     "benefits.testimonial.3.company": "FreshBox",
 
     // Products
-    "products.label": "Our offer",
-    "products.title": "Packaging materials",
-    "products.subtitle": "A wide range of products for packing, securing, and transporting goods.",
-    "products.1.title": "Boxes & cartons",
-    "products.1.desc": "Standard, custom-shaped, and specialist cartons in every size. Custom production available.",
-    "products.2.title": "Films & tapes",
-    "products.2.desc": "Stretch films, bubble wrap, packing and security tapes. High-durability materials.",
-    "products.3.title": "Fillers",
-    "products.3.desc": "Packing paper, Styrofoam fillers, air cushions. Product protection in transit.",
-    "products.4.title": "Eco materials",
-    "products.4.desc": "Kraft paper, corrugated cardboard, biodegradable materials. Environmentally friendly packaging.",
-    "products.5.title": "Pallets & protection",
-    "products.5.desc": "Wooden pallets, corner protectors, shrink films. Comprehensive cargo protection.",
-    "products.6.title": "Custom solutions",
-    "products.6.desc": "We design and produce packaging tailored to individual customer needs.",
-    "products.more": "View details",
+    "products.label": "Our production",
+    "products.title": "Paper packaging materials",
+    "products.subtitle": "We produce eco-friendly paper packaging materials. Ideal solutions for companies looking for large quantities.",
+    "products.1.title": "Wrapping paper in rolls and sheets",
+    "products.1.desc": "High-quality wrapping paper available in rolls and sheets. Perfect for product protection, layer separation and bulk packaging.",
+    "products.2.title": "Wrapping paper in rolls",
+    "products.2.desc": "Wrapping paper in rolls of various weights and widths. An economical solution for continuous packaging on the production line.",
+    "products.3.title": "Honeycomb cut paper",
+    "products.3.desc": "Innovative paper with cuts forming a honeycomb structure. Flexible, eco-friendly and excellent at absorbing shocks.",
+    "products.4.title": "Bubble paper",
+    "products.4.desc": "A paper alternative to bubble wrap. 100% paper, fully recyclable, provides effective protection against damage.",
+    "products.more": "Request a quote",
 
     // Testimonials
     "testimonials.label": "Testimonials",
@@ -293,23 +343,23 @@ const translations = {
     "blog.3.desc": "Practical tips on optimizing packaging costs in your business without sacrificing quality.",
 
     // CTA
-    "cta.title": "Ready to cooperate?",
-    "cta.subtitle": "Contact us and receive a free quote tailored to your company's needs.",
-    "cta.button": "Contact us",
+    "cta.title": "Looking for a long-term manufacturing partner?",
+    "cta.subtitle": "Contact us and receive a custom quote tailored to your order volume.",
+    "cta.button": "Request a quote",
 
     // FAQ
     "faq.label": "FAQ",
     "faq.title": "Frequently asked questions",
     "faq.1.q": "What is the minimum order size?",
-    "faq.1.a": "The minimum order is 100 cartons or 1 pallet of packaging materials. We offer flexible terms for regular customers.",
+    "faq.1.a": "The minimum order is 1 pallet of packaging materials. We offer flexible terms for regular customers.",
     "faq.2.q": "How quickly do you fulfill orders?",
     "faq.2.a": "Standard orders are fulfilled within 24-48 business hours. Custom orders and made-to-order production - 5 to 10 business days.",
     "faq.3.q": "Do you offer free delivery?",
     "faq.3.a": "Yes, we offer free delivery for orders over PLN 2,000 net across all of Poland.",
-    "faq.4.q": "Can you produce packaging with our logo?",
-    "faq.4.a": "Of course! We offer a full range of packaging customization - prints, logos, non-standard sizes. Contact us for an individual quote.",
+    "faq.4.q": "Do you produce paper with custom prints?",
+    "faq.4.a": "Yes, we offer custom printed wrapping paper - logo prints, brand colors and custom designs. Contact us for a quote.",
     "faq.5.q": "What certifications do your products have?",
-    "faq.5.a": "Our products hold FSC, PEFC certifications and meet ISO 9001 standards. Our eco-friendly materials hold biodegradability certificates.",
+    "faq.5.a": "Our products hold FSC, PEFC certifications and meet ISO 9001 standards. All materials are fully recyclable.",
 
     // Contact
     "contact.label": "Contact",
@@ -381,18 +431,76 @@ const translations = {
     "pricing.3.f4": "Prints and branding",
     "pricing.cta": "Request a quote",
 
+    // Contact form consent
+    "contact.form.consent": "I have read the <a href=\"privacy.html\">Privacy Policy</a> and I consent to the processing of my personal data in order to handle my inquiry.",
+
     // Footer
-    "footer.desc": "Packing Master - manufacturer and supplier of professional packaging materials. We have been operating in the market for over 10 years, offering comprehensive logistics solutions.",
+    "footer.desc": "Packing Master - manufacturer of paper packaging materials. Wrapping paper, honeycomb and bubble paper. B2B cooperation at scale.",
     "footer.menu": "Menu",
     "footer.products": "Products",
     "footer.contact": "Contact",
     "footer.social": "Social Media",
     "footer.copyright": "© 2026 Packing Master. All rights reserved.",
+    "footer.privacy": "Privacy Policy",
 
     // Blog page
     "blogpage.label": "Blog",
     "blogpage.title": "News & tips",
-    "blogpage.subtitle": "We share our knowledge about packaging, logistics, and new industry trends."
+    "blogpage.subtitle": "We share our knowledge about packaging, logistics, and new industry trends.",
+
+    // Privacy Policy page
+    "privacy.label": "Legal information",
+    "privacy.title": "Privacy Policy",
+    "privacy.subtitle": "Information on the processing of personal data in accordance with GDPR",
+    "privacy.s1.title": "1. Data Controller",
+    "privacy.s1.p1": "The controller of your personal data is PACKING MASTER Spółka z ograniczoną odpowiedzialnością, registered at Korczunkowa 20, 05-503 Głosków, Poland, NIP (Tax ID): 1231578739, REGON: 541471730 (hereinafter: \"Controller\").",
+    "privacy.s1.p2": "For matters related to personal data protection, you can contact us at: info@packingmaster.com or by phone: +48 532 104 492.",
+    "privacy.s2.title": "2. What data we collect",
+    "privacy.s2.p1": "When using our website, we may collect the following personal data:",
+    "privacy.s2.li1": "Full name — provided in the contact form",
+    "privacy.s2.li2": "Email address — provided in the contact form",
+    "privacy.s2.li3": "Phone number — optionally provided in the contact form",
+    "privacy.s2.li4": "Company name — optionally provided in the contact form",
+    "privacy.s2.li5": "Message content — entered in the contact form",
+    "privacy.s2.li6": "Website activity data — automatically collected by Google Analytics (IP address, browser type, visit duration, pages visited)",
+    "privacy.s3.title": "3. Purposes and legal basis for processing",
+    "privacy.s3.p1": "We process your personal data for the following purposes:",
+    "privacy.s3.li1": "Responding to inquiries submitted through the contact form — based on Art. 6(1)(f) GDPR (legitimate interest of the Controller in handling inquiries)",
+    "privacy.s3.li2": "Establishing and carrying out business cooperation — based on Art. 6(1)(b) GDPR (performance of a contract or steps prior to entering into a contract)",
+    "privacy.s3.li3": "Analyzing website traffic and optimization — based on Art. 6(1)(a) GDPR (consent through cookie acceptance) and Art. 6(1)(f) GDPR (legitimate interest of the Controller)",
+    "privacy.s3.li4": "Establishing, pursuing or defending against claims — based on Art. 6(1)(f) GDPR (legitimate interest of the Controller)",
+    "privacy.s4.title": "4. Data recipients",
+    "privacy.s4.p1": "Your personal data may be shared with the following categories of recipients:",
+    "privacy.s4.li1": "Web3Forms (web3forms.com) — a service handling the contact form, processing data submitted through it",
+    "privacy.s4.li2": "Google LLC — as part of the Google Analytics service, for website traffic analysis",
+    "privacy.s4.li3": "Hosting and IT service providers — providing technical infrastructure for the website",
+    "privacy.s4.p2": "Some of the above recipients may be based outside the European Economic Area (EEA). In such cases, data transfer is carried out based on Standard Contractual Clauses approved by the European Commission or an adequacy decision.",
+    "privacy.s5.title": "5. Data retention period",
+    "privacy.s5.p1": "We store your personal data for the period necessary to fulfill the purposes for which it was collected:",
+    "privacy.s5.li1": "Contact form data — for the duration of correspondence and inquiry handling, then for the limitation period for any potential claims (maximum 3 years)",
+    "privacy.s5.li2": "Analytics data (Google Analytics) — in accordance with Google Analytics data retention settings (default 14 months)",
+    "privacy.s6.title": "6. Your rights",
+    "privacy.s6.p1": "In connection with the processing of your personal data, you have the following rights:",
+    "privacy.s6.li1": "Right of access — you can obtain information about what data we process about you",
+    "privacy.s6.li2": "Right to rectification — you can request correction of inaccurate or completion of incomplete data",
+    "privacy.s6.li3": "Right to erasure (right to be forgotten) — you can request deletion of your data",
+    "privacy.s6.li4": "Right to restriction of processing — you can request restriction of the processing of your data",
+    "privacy.s6.li5": "Right to data portability — you can receive your data in a structured format",
+    "privacy.s6.li6": "Right to object — you can object to the processing of data based on the legitimate interest of the Controller",
+    "privacy.s6.li7": "Right to withdraw consent — if processing is based on consent, you can withdraw it at any time",
+    "privacy.s6.p2": "To exercise the above rights, contact us at: info@packingmaster.com.",
+    "privacy.s7.title": "7. Right to lodge a complaint",
+    "privacy.s7.p1": "If you believe that the processing of your personal data violates GDPR provisions, you have the right to lodge a complaint with the supervisory authority — the President of the Personal Data Protection Office (ul. Stawki 2, 00-193 Warsaw, Poland, www.uodo.gov.pl).",
+    "privacy.s8.title": "8. Cookies",
+    "privacy.s8.p1": "Our website uses cookies. These are small text files stored on your device by your web browser. We use the following types of cookies:",
+    "privacy.s8.li1": "Essential cookies — ensuring proper website functionality (e.g., remembering the selected language)",
+    "privacy.s8.li2": "Analytics cookies (Google Analytics) — enabling analysis of website usage, collecting anonymized statistical data",
+    "privacy.s8.p2": "You can manage cookie settings in your web browser. Disabling cookies may affect website functionality.",
+    "privacy.s9.title": "9. Voluntary provision of data",
+    "privacy.s9.p1": "Providing personal data in the contact form is voluntary, but necessary to submit an inquiry and receive a response from us. Failure to provide data marked as required will prevent the form from being submitted.",
+    "privacy.s10.title": "10. Changes to the privacy policy",
+    "privacy.s10.p1": "The Controller reserves the right to make changes to this Privacy Policy. The current version of the policy is always available on this page.",
+    "privacy.s10.p2": "Last updated: March 26, 2026."
   }
 };
 
