@@ -283,11 +283,25 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
 
       const formData = new FormData(contactForm);
+      const jsonData = {};
+      formData.forEach((value, key) => {
+        if (key !== 'privacy_consent' && key !== 'botcheck') {
+          jsonData[key] = value;
+        }
+      });
+
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(jsonData)
       })
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
       .then(data => {
         if (data.success) {
           btn.textContent = currentLang === 'pl' ? 'Wysłano!' : 'Sent!';
@@ -296,6 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           btn.textContent = currentLang === 'pl' ? 'Błąd wysyłki' : 'Error';
           btn.style.backgroundColor = '#dc2626';
+          console.error('Web3Forms error:', data);
         }
         setTimeout(() => {
           btn.textContent = originalText;
@@ -303,7 +318,8 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.style.backgroundColor = '';
         }, 3000);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error('Form error:', err);
         btn.textContent = currentLang === 'pl' ? 'Błąd połączenia' : 'Connection error';
         btn.style.backgroundColor = '#dc2626';
         setTimeout(() => {
