@@ -98,20 +98,6 @@ const translations = {
     "cta.subtitle": "Skontaktuj się z nami i otrzymaj indywidualną wycenę dostosowaną do wielkości Twojego zamówienia.",
     "cta.button": "Zapytaj o wycenę",
 
-    // FAQ
-    "faq.label": "FAQ",
-    "faq.title": "Często zadawane pytania",
-    "faq.1.q": "Jaki jest minimalny rozmiar zamówienia?",
-    "faq.1.a": "Minimalne zamówienie to 1 paleta materiałów pakujących. Dla stałych klientów oferujemy elastyczne warunki.",
-    "faq.2.q": "Jak szybko realizujecie zamówienia?",
-    "faq.2.a": "Standardowe zamówienia realizujemy w ciągu 24-48 godzin roboczych. Zamówienia niestandardowe i produkcja na zamówienie - od 5 do 10 dni roboczych.",
-    "faq.3.q": "Czy oferujecie darmową dostawę?",
-    "faq.3.a": "Tak, oferujemy darmową dostawę dla zamówień powyżej 2000 zł netto na terenie całej Polski.",
-    "faq.4.q": "Czy produkujecie papier z nadrukiem?",
-    "faq.4.a": "Tak, oferujemy personalizację papieru pakowego - nadruki logo, kolorów firmowych i indywidualnych wzorów. Skontaktuj się z nami po wycenę.",
-    "faq.5.q": "Jakie certyfikaty posiadają Wasze produkty?",
-    "faq.5.a": "Nasze produkty posiadają certyfikaty FSC, PEFC oraz spełniają normy ISO 9001. Wszystkie materiały są w pełni recyklingowalne.",
-
     // Contact
     "contact.label": "Kontakt",
     "contact.title": "Skontaktuj się z nami",
@@ -346,20 +332,6 @@ const translations = {
     "cta.title": "Looking for a long-term manufacturing partner?",
     "cta.subtitle": "Contact us and receive a custom quote tailored to your order volume.",
     "cta.button": "Request a quote",
-
-    // FAQ
-    "faq.label": "FAQ",
-    "faq.title": "Frequently asked questions",
-    "faq.1.q": "What is the minimum order size?",
-    "faq.1.a": "The minimum order is 1 pallet of packaging materials. We offer flexible terms for regular customers.",
-    "faq.2.q": "How quickly do you fulfill orders?",
-    "faq.2.a": "Standard orders are fulfilled within 24-48 business hours. Custom orders and made-to-order production - 5 to 10 business days.",
-    "faq.3.q": "Do you offer free delivery?",
-    "faq.3.a": "Yes, we offer free delivery for orders over PLN 2,000 net across all of Poland.",
-    "faq.4.q": "Do you produce paper with custom prints?",
-    "faq.4.a": "Yes, we offer custom printed wrapping paper - logo prints, brand colors and custom designs. Contact us for a quote.",
-    "faq.5.q": "What certifications do your products have?",
-    "faq.5.a": "Our products hold FSC, PEFC certifications and meet ISO 9001 standards. All materials are fully recyclable.",
 
     // Contact
     "contact.label": "Contact",
