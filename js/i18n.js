@@ -47,9 +47,9 @@ const translations = {
     "benefits.testimonial.3.company": "FreshBox",
 
     // Products
-    "products.label": "Nasza produkcja",
+    "products.label": "Nasza Oferta",
     "products.title": "Papierowe materiały pakujące",
-    "products.subtitle": "Produkujemy ekologiczne materiały pakujące z papieru. Idealne rozwiązania dla firm szukających dużych ilości.",
+    "products.subtitle": "Oferujemy Ekologiczne materiały pakujące z papieru. Idealne rozwiązania dla firm szukających dużych ilości.",
     "products.1.title": "Papier pakowy w rolkach i arkuszach",
     "products.1.desc": "Oferujemy papier kraft, testliner i fluting jako praktyczne i ekonomiczne rozwiązanie do zabezpieczania produktów w transporcie, magazynowaniu i podczas przygotowania wysyłek. To materiały chętnie wybierane przez firmy produkcyjne, sklepy internetowe, centra logistyczne, branżę meblową oraz lakiernie samochodowe.\n\nNasze papiery sprawdzają się jako wypełniacz paczek, materiał ochronny, przekładki oraz zabezpieczenie powierzchni narażonych na zarysowania, zabrudzenia i uszkodzenia mechaniczne. Dostarczamy je w rolkach i arkuszach, w formatach dopasowanych do potrzeb klientów biznesowych.",
     "products.2.title": "Tektura falista",
@@ -282,9 +282,9 @@ const translations = {
     "benefits.testimonial.3.company": "FreshBox",
 
     // Products
-    "products.label": "Our production",
+    "products.label": "Our Offer",
     "products.title": "Paper packaging materials",
-    "products.subtitle": "We produce eco-friendly paper packaging materials. Ideal solutions for companies looking for large quantities.",
+    "products.subtitle": "We offer eco-friendly paper packaging materials. Ideal solutions for companies looking for large quantities.",
     "products.1.title": "Wrapping paper in rolls and sheets",
     "products.1.desc": "High-quality wrapping paper available in rolls and sheets. Perfect for product protection, layer separation and bulk packaging.",
     "products.2.title": "Corrugated cardboard",
