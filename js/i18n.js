@@ -62,17 +62,16 @@ const translations = {
 
     // Testimonials
     "testimonials.label": "Opinie klientów",
-    "testimonials.title": "Zaufali nam",
     "testimonials.subtitle": "Sprawdź, co mówią o nas nasi klienci i partnerzy biznesowi.",
     "testimonials.1.text": "Współpraca z Packing Master to czysta przyjemność. Materiały zawsze najwyższej jakości, a dostawy terminowe. Polecam każdej firmie e-commerce.",
     "testimonials.1.name": "Anna Kowalska",
-    "testimonials.1.role": "Właścicielka, Sklep Online AK",
+    "testimonials.1.role": "Właścicielka",
     "testimonials.2.text": "Od kiedy korzystamy z materiałów Packing Master, liczba uszkodzeń w transporcie spadła o 80%. Doskonałe kartony i wypełniacze.",
     "testimonials.2.name": "Marcin Nowak",
-    "testimonials.2.role": "Kierownik logistyki, TechParts Sp. z o.o.",
+    "testimonials.2.role": "Kierownik logistyki",
     "testimonials.3.text": "Profesjonalne podejście, szybki czas realizacji i świetna obsługa klienta. Zamówienia zawsze kompletne i dobrze zabezpieczone.",
     "testimonials.3.name": "Katarzyna Wiśniewska",
-    "testimonials.3.role": "Manager, FreshBox",
+    "testimonials.3.role": "Manager",
 
     // Partners
     "partners.label": "Partnerzy",
@@ -297,17 +296,16 @@ const translations = {
 
     // Testimonials
     "testimonials.label": "Testimonials",
-    "testimonials.title": "Trusted by many",
     "testimonials.subtitle": "See what our clients and business partners say about us.",
     "testimonials.1.text": "Working with Packing Master is a pleasure. Materials are always top quality and deliveries are on time. Highly recommend for any e-commerce business.",
     "testimonials.1.name": "Anna Kowalska",
-    "testimonials.1.role": "Owner, AK Online Store",
+    "testimonials.1.role": "Owner",
     "testimonials.2.text": "Since we started using Packing Master materials, transit damage has dropped by 80%. Excellent cartons and fillers.",
     "testimonials.2.name": "Marcin Nowak",
-    "testimonials.2.role": "Logistics Manager, TechParts Ltd.",
+    "testimonials.2.role": "Logistics Manager",
     "testimonials.3.text": "Professional approach, quick turnaround, and great customer service. Orders are always complete and well-secured.",
     "testimonials.3.name": "Katarzyna Wiśniewska",
-    "testimonials.3.role": "Manager, FreshBox",
+    "testimonials.3.role": "Manager",
 
     // Partners
     "partners.label": "Partners",
