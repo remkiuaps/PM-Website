@@ -170,6 +170,11 @@ const translations = {
     // Contact form consent
     "contact.form.consent": "Zapoznałem/am się z <a href=\"privacy.html\">Polityką Prywatności</a> i wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi przesłanego zapytania.",
 
+    // Contact form success modal
+    "contact.success.title": "Wiadomość wysłana!",
+    "contact.success.text": "Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.",
+    "contact.success.close": "Zamknij",
+
     // Footer
     "footer.desc": "Packing Master - producent papierowych materiałów pakujących. Papier pakowy, honeycomb i bąbelkowy. Współpraca B2B na dużą skalę.",
     "footer.menu": "Menu",
@@ -403,6 +408,11 @@ const translations = {
 
     // Contact form consent
     "contact.form.consent": "I have read the <a href=\"privacy.html\">Privacy Policy</a> and I consent to the processing of my personal data in order to handle my inquiry.",
+
+    // Contact form success modal
+    "contact.success.title": "Message sent!",
+    "contact.success.text": "Thank you for reaching out. We will reply as soon as possible.",
+    "contact.success.close": "Close",
 
     // Footer
     "footer.desc": "Packing Master - manufacturer of paper packaging materials. Wrapping paper, honeycomb and bubble paper. B2B cooperation at scale.",
