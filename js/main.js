@@ -265,6 +265,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Contact Form ----
   const contactForm = document.getElementById('contactForm');
+  const successModal = document.getElementById('formSuccess');
+
+  const openSuccessModal = () => {
+    if (!successModal) return;
+    successModal.classList.add('is-open');
+    successModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    const closeBtn = successModal.querySelector('.form-success__close');
+    if (closeBtn) closeBtn.focus({ preventScroll: true });
+  };
+
+  const closeSuccessModal = () => {
+    if (!successModal) return;
+    successModal.classList.remove('is-open');
+    successModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  if (successModal) {
+    successModal.addEventListener('click', (e) => {
+      if (e.target.closest('[data-close]')) closeSuccessModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && successModal.classList.contains('is-open')) {
+        closeSuccessModal();
+      }
+    });
+  }
+
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -276,10 +305,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const formData = new FormData(contactForm);
       const jsonData = {};
       formData.forEach((value, key) => {
-        if (key !== 'privacy_consent' && key !== 'botcheck') {
-          jsonData[key] = value;
-        }
+        if (key === 'privacy_consent') return;
+        jsonData[key] = value;
       });
+      // Set Reply-To explicitly so replies reach the customer
+      if (jsonData.email) jsonData.replyto = jsonData.email;
+      // Record the GDPR consent in the notification as proof
+      jsonData['Zgoda RODO'] = formData.get('privacy_consent')
+        ? 'TAK – zaakceptowano Politykę Prywatności'
+        : 'NIE';
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 20000);
 
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -287,29 +324,33 @@ document.addEventListener('DOMContentLoaded', () => {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify(jsonData)
+        body: JSON.stringify(jsonData),
+        signal: controller.signal
       })
       .then(res => {
+        clearTimeout(timeoutId);
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
       })
       .then(data => {
         if (data.success) {
-          btn.textContent = currentLang === 'pl' ? 'Wysłano!' : 'Sent!';
-          btn.style.backgroundColor = '#145220';
           contactForm.reset();
+          btn.textContent = originalText;
+          btn.disabled = false;
+          openSuccessModal();
         } else {
           btn.textContent = currentLang === 'pl' ? 'Błąd wysyłki' : 'Error';
           btn.style.backgroundColor = '#dc2626';
           console.error('Web3Forms error:', data);
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            btn.style.backgroundColor = '';
+          }, 3000);
         }
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.disabled = false;
-          btn.style.backgroundColor = '';
-        }, 3000);
       })
       .catch((err) => {
+        clearTimeout(timeoutId);
         console.error('Form error:', err);
         btn.textContent = currentLang === 'pl' ? 'Błąd połączenia' : 'Connection error';
         btn.style.backgroundColor = '#dc2626';
